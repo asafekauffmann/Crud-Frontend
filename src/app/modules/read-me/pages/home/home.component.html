@@ -1,10 +1,80 @@
-<div class="w-75">
-  <h4>Lorem ipsum dolor</h4>
-  <p>Consectetur adipiscing elit.
-    Ut enim purus, lacinia sit amet
-    mauris quis, volutpat ullamcorper
-    magna.<br> Suspendisse a magna tortor.
-    Proin vel sollicitudin erat
-  </p>
-</div>
+<p>Read.me</p>
+<div class="myReadme">
 
+  <div class="w-75 my-3">
+    <h4>Especificações do projeto</h4>
+    <p>Consectetur adipiscing elit.
+      Ut enim purus, lacinia sit amet
+      mauris quis, volutpat ullamcorper
+      magna.<br> Suspendisse a magna tortor.
+      Proin vel sollicitudin erat
+    </p>
+  </div>
+
+  <div class="w-75 my-3">
+    <h4>Repositórios disponíveis no Github</h4>
+    <p>Front-end - <a href="https://github.com/asafekauffmann/Crud-Frontend">https://github.com/asafekauffmann/Crud-Frontend</a></p>
+    <p>Back-end -  <a href="https://github.com/asafekauffmann/backend">https://github.com/asafekauffmann/backend</a></p>
+  </div>
+
+  <div class="w-50 my-3">
+    <h4>Organização e estrutura</h4>
+    <p class="my-3">O Projet foi estrututado e organizado
+      por modulos e componentes dinâmicos, atribuindo
+      assim suas necessidades de estrutura e arquitetura
+      especificas para SPA com o framework Angular mantendo
+      Conceitos e boas práticas de programação.
+    </p>
+    <p class="my-2">
+      Modulos existentes:<br>
+      App-Module/LoginComponent; Abertura-Module; Read.me-Module; Nivel-Module; Desenvolvedor-Module; Shared-Module;
+      <br><br>
+      Base
+      <br>
+      Master-page (Base da estrutura do modulo com templates dinânimcos);
+      Pages (Base de estrutura no modulo referente ao main);
+      Services (base de estrutura no modulo referente aos serviços utilizados nos componentes);
+      App-Routing (Base de estrutura de rota interna do módulo);
+      App-Module (base de estrutura do modulo);
+      Model (Interface para Api e Services);
+
+    </p>
+    <p class="my-3">
+      No style.scss estará disponível as configurações de variáveis globais,
+      configurações de classe LightMode e DarkMode.
+    </p>
+    <p class="my-3">
+      No Shared-Module foi organizado o modulo de estrutura e serviços gerais dos
+      componentes dinâmicos para utilização no sistema mantendo assim o padrão no projeto,
+      Reaproveitamento de código, Clean code/architecture.
+    </p>
+
+    <p class="my-3">
+      Página inicial do projeto - Login;
+      Implementações template:
+      Navegação lateral retraivel ao click em logo.
+      Dark-Light Mode
+    </p>
+
+    <h4>Especificações Back-end</h4>
+    <p class="my-3">
+      Back-end criada como uma API RESTful que utilize os métodos (​GET​, ​POST​, ​PUT/PATCH​ e ​DELETE​).
+      <br><br>
+      Dependências:<br>
+      NodeJs - v.18
+      Prisma - v.4.11
+      TsNode - v.10.9
+      cors - v.2.8
+      Express - v.4.18
+      joi - v.17.8
+    </p>
+
+    <p class="my-3">
+      Camadas <br>
+      1 Rota - Define o nome do endpoint e qual controller sera chamado.<br>
+      2 Controller - Valida os dados vindos da requisição, chama o serviço e fazer o retorno da requisição.<br>
+      3 Service - Implementa regras de negocio e chamar o repositório responsavel por persistir os dados.<br>
+      4 Repository - Fazer a implementação da tecnologia usada para se comunicar com o banco de dados.<br>
+    </p>
+  </div>
+</div>
