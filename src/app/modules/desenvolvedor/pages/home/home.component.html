@@ -1,0 +1,98 @@
+<h4>Criar um desenvolvedor</h4>
+
+<div class="d-flex flex-row align-items-center justify-content-start flex-wrap">
+  <div class="m-2">
+    <app-input
+      [inputType]="'text'"
+      [labelText]="'Nome'"
+      [inputPlaceholder]="'Nome'"
+      [(ngModel)]="developer.name" name="name" ngDefaultControl [value]="developer.name">
+    </app-input>
+  </div>
+
+  <div class="m-2">
+    <app-input
+      [inputType]="'text'"
+      [labelText]="'Gênero'"
+      [inputPlaceholder]="'M OU F'"
+      [(ngModel)]="developer.genre" genre="genre" ngDefaultControl [value]="developer.genre">
+    </app-input>
+  </div>
+
+  <div class="m-2">
+    <app-input
+      [inputType]="'date'"
+      [labelText]="'Data Nascimento'"
+      [inputPlaceholder]="'00000'"
+      [(ngModel)]="developer.birth" birth="birth" ngDefaultControl [value]="developer.birth">
+
+    </app-input>
+  </div>
+
+  <div class="m-2">
+    <app-input
+      [inputType]="'number'"
+      [labelText]="'Idade'"
+      [inputPlaceholder]="'00'"
+      [(ngModel)]="developer.age" age="age" ngDefaultControl [value]="(developer.age) ">
+    </app-input>
+  </div>
+
+  <div class="m-2">
+    <app-input
+      [inputType]="'text'"
+      [labelText]="'hobby'"
+      [inputPlaceholder]="'inserir'"
+      [(ngModel)]="developer.hobby" hobby="hobby" ngDefaultControl [value]="developer.hobby">
+
+    </app-input>
+  </div>
+
+  <div class="m-2">
+    <app-input
+      [inputType]="'number'"
+      [labelText]="'nivel'"
+      [inputPlaceholder]="'00'"
+      [(ngModel)]="developer.levelId" levelId="levelId" ngDefaultControl [value]="developer.levelId">
+    </app-input>
+  </div>
+
+  <div class="m-2 mt-4">
+    <button (click)="createDeveloper()"  type="button" class="btn btn-primary">Criar</button>
+  </div>
+</div>
+
+<!--tabela-->
+<div class="m-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Gênero</th>
+        <th scope="col">Aniversário</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Hobby</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dev of developers">
+        <td>{{ dev.name }}</td>
+        <td>{{ dev.genre }}</td>
+        <td>{{ dev.birth }}</td>
+        <td>{{ dev.age }}</td>
+        <td>{{ dev.hobby }}</td>
+        <td>{{ dev.levelId }}</td>
+        <td>
+          <button (click)="setDeveloper(dev)" class="mx-1 editCor btnStyle">
+            <fa-icon [icon]="faPen"></fa-icon>
+          </button>
+          <button (click)="removeDeveloper(dev.id!)" class="mx-1 deleteCor btnStyle">
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

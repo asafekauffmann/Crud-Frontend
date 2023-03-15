@@ -1,0 +1,17 @@
+<div class="form-group" [formGroup]="parentForm">
+  <label class="ms-0 fontSize" for="{{ inputID }}"> {{ labelInput }} </label>
+  <input type="{{ inputType }}"
+         class="form-control form-control-sm sizeInput tamanhoInput"
+         formControlName="{{ controlName }}"
+         id="{{ inputID }}"
+         [ngClass]="{'is-invalid': InputInvalido}"
+         placeholder="{{ inputPlaceholder }}"
+         autocomplete="off"
+         value="{{ value }}"
+         >
+  <ng-container *ngIf="InputInvalido">
+    <small class="text-danger msgError">
+        {{ msgError }}
+    </small>
+  </ng-container>
+</div>

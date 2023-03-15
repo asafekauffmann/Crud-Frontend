@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+
+  nav {
+    .ulListNavigation {
+      list-style: none;
+      padding: 12px 3px;
+
+      li {
+        margin: 0 10px;
+        color: #e7dede;
+
+        a {
+          text-decoration: none;
+          color: #e7dede;
+        }
+      }
+    }
+
+  }
+}

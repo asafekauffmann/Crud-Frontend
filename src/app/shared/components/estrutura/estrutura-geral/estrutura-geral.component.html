@@ -1,0 +1,19 @@
+<div class="d-flex flex-column">
+
+  <div class="d-flex flex-row">
+    <app-nav>
+      <div class="profile"><ng-content select=".profileNav"></ng-content></div>
+      <div class="menu"><ng-content select=".menuNavegacao"></ng-content></div>
+    </app-nav>
+
+
+    <div class="d-flex flex-column container-fluid px-0">
+      <app-header></app-header>
+      <app-main class="container-fluid">
+        <div class="mainComponent"><ng-content select=".mainLayout"></ng-content></div>
+      </app-main>
+    </div>
+  </div>
+
+</div>
+

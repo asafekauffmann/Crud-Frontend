@@ -1,0 +1,16 @@
+<div class="navLateral" [style.width.px]="navWidthpx" >
+  <app-logo></app-logo>
+
+  <div class="d-flex align-items-center flex-column">
+
+    <div class="d-flex align-items-center justify-content-center" *ngIf="!navService._IsColapsed">
+      <ng-content select=".profile"></ng-content>
+    </div>
+
+    <div class="menuLateral" *ngIf="!navService._IsColapsed">
+      <ng-content select=".menu"></ng-content>
+    </div>
+
+  </div>
+
+</div>

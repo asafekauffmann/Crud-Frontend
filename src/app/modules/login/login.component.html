@@ -1,0 +1,37 @@
+<div class="baseLogin d-flex flex-row align-items-center">
+
+  <div id="log" class="d-flex align-items-center justify-content-center flex-column">
+
+    <h2>Bem-Vindo</h2>
+    <img class="my-1" src="../../../assets/logo/DevDash.png" width="100">
+    <p class="mt-2">Faça seu login</p>
+
+    <div class="m-2">
+      <app-input
+        [inputType]="'text'"
+        [labelText]="'Login'"
+        [inputPlaceholder]="'Nome'">
+      </app-input>
+    </div>
+    <div class="m-2">
+      <app-input
+        [inputType]="'text'"
+        [labelText]="'Senha'"
+        [inputPlaceholder]="'Senha'">
+      </app-input>
+    </div>
+
+    <button routerLink="abertura" type="button" id="btnSize" class="btn btn-primary mt-2">Login</button>
+
+    <br>
+    <p id="details">Develop by Asafe Kauffmann.</p>
+  </div>
+
+  <div id="imgLog" class="d-flex align-items-center justify-content-center flex-column">
+    <img src="../../../assets/images/Pipa.png">
+    <h1 id="colorText">Get in Touch</h1>
+    <p id="colorText">Software CRUD para Desenvolvedores</p>
+    <p id="details">Repositório disponivel no GitHub.</p>
+  </div>
+
+</div>

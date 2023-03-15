@@ -1,0 +1,29 @@
+table {
+  width: 300px;
+}
+
+.deleteCor {
+  color: red;
+}
+
+.editCor {
+  color: #4264D0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  color: black;
+  margin: 3px 15px;
+}
+
+.btnStyle {
+  border: none;
+  background: none;
+}
+
+#tamanhoLista {
+  width: 80px;
+}

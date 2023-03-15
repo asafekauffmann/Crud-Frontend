@@ -1,0 +1,29 @@
+<app-estrutura-geral>
+  <div class="profileNav">
+    <div class="d-flex flex-column txtCenter align-items-center justi-content-center">
+      <img src="../../../../../assets/images/profile.png" width="120px" class="mt-3">
+      <p class="my-3">Bem-Vindo <br><strong> {{ usuario }}</strong></p>
+      </div>
+  </div>
+
+  <div class="menuNavegacao mt-3">
+    <a id="noDecoration" routerLink="/nivel">
+      <p class="menuLateral">Nível</p>
+    </a>
+
+    <a id="noDecoration" routerLink="/abertura">
+      <p class="menuLateral" >Abertura</p>
+    </a>
+
+    <a id="noDecoration">
+      <p class="menuLateral">Comparações</p>
+    </a>
+
+  </div>
+
+  <div class="mainLayout">
+    <app-home></app-home>
+  </div>
+</app-estrutura-geral>
+
+

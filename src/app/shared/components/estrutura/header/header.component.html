@@ -1,0 +1,43 @@
+<div class="header h-auto d-flex align-items-center justify-content-between">
+  <nav>
+    <ul class="ulListNavigation d-flex mb-0 mx-2 d-inline">
+      <li>
+        <a routerLink="/abertura">
+          <span style="font-size: 1.1em;">
+            <fa-icon [icon]="faHome"></fa-icon>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/read-me">
+          <span style="font-size: 1.1em;">
+            <fa-icon [icon]="faQuestionCircle"></fa-icon>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <span>
+    <nav>
+      <ul class="ulListNavigation d-flex mb-0 mx-2 d-inline">
+        <li>
+          <a>
+            <span style="font-size: 1.1em;">
+              <fa-icon (click)="change()" [icon]="faAdjust"></fa-icon>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <span style="font-size: 1.1em;">
+              <fa-icon [icon]="faRightToBracket"></fa-icon>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </span>
+
+</div>

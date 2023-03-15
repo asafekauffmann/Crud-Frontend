@@ -1,0 +1,40 @@
+<h4>Criar um Nível</h4>
+
+<div class="d-flex flex-row align-items-center justify-content-start flex-wrap divtamanho">
+  <div class="m-2">
+    <app-input
+      [inputType]="'string'"
+      [labelText]="'Inserir Nivel'"
+      [inputPlaceholder]="'0'"
+      [(ngModel)]="nivel.level" name="name" ngDefaultControl [value]="nivel.level">
+    </app-input>
+  </div>
+
+  <div class="m-2 mt-4">
+    <button (click)="createNivel()" type="button" class="btn btn-primary">Criar</button>
+  </div>
+</div>
+
+<div class="m-2">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nivel</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let niv of niveis">
+        <td>{{ niv.level }}</td>
+        <td id="tamanhoLista">
+          <button (click)="setNivel(niv)" class="mx-1 editCor btnStyle">
+            <fa-icon [icon]="faPen"></fa-icon>
+          </button>
+          <button (click)="removeNivel(niv.id!)"  class="mx-1 deleteCor btnStyle">
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

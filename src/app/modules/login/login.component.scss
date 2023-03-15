@@ -1,0 +1,34 @@
+.baseLogin {
+  width: 100%;
+  max-width: 1600px;
+}
+
+#log {
+  height: 100vh;
+  min-width: 600px;
+  width: 600px;
+
+}
+#imgLog {
+  height: 100vh;
+  width: 100%;
+  background-color: #344a92;
+
+  img {
+    margin-bottom: 50px;
+    width: 360px;
+  }
+}
+
+#colorText {
+  color: white;
+}
+
+#btnSize {
+  width: 203px;
+}
+
+#details {
+  font-size: 12px;
+  color: rgb(172, 167, 167);
+}
