@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NavService } from 'src/app/shared/services/nav/nav.service';
 
-const WIDTH_IMG_LOGO : number = 100;
+const WIDTH_IMG_LOGO : number = 35;
 const WIDTH_IMG_LOGO_O : number = 35;
-const URL_LOGO_OFICIAL : string = "../../../../../assets/logo/DevDash.png";
+const URL_LOGO_OFICIAL : string = "../../../../../assets/logo/dev-dash.png";
 const URL_LOGO_O : string = "../../../../../assets/logo/logo.png";
 
 @Component({
